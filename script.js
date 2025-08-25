@@ -10,11 +10,37 @@ document.querySelectorAll('.btn').forEach(button => {
         }
     });
 });
+const texts = ["Software Engineering Student", "Graphics Designer", "Web Developer"];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;  
 
-const typed = new Typed('.multiple-text', {
-      strings: ['Software Engineering Student', 'Graphics Designer','Web Developer'],
-      typeSpeed: 80,
-      backSoeed:80,
-      backDelay:1200,
-      loop:true,
-});
+const speed = 100;  
+const backSpeed = 80; 
+const delay = 1200; 
+function typeEffect() {
+  const element = document.querySelector(".multiple-text");
+  const currentText = texts[textIndex];
+
+  if (!isDeleting) {
+    element.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === currentText.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, delay);
+      return;
+    }
+  } else {
+    element.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+    }
+  }
+
+  setTimeout(typeEffect, isDeleting ? backSpeed : speed);
+}
+typeEffect();

@@ -33,11 +33,7 @@ section {
     min-height: 110vh;
     padding: 10rem 9% 2rem;
     background: linear-gradient(145deg, #e6d4f4, #c2a6e0);
-    border-radius: 2rem;
-    box-shadow: 
-        10px 10px 20px var(--dark-shadow),
-        -10px -10px 20px var(--light-shadow);
-    margin: 1rem auto;
+    margin:auto;
 }
 
 /* Header & NavBar Section */
@@ -95,6 +91,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(226, 212, 241);
 }
 
 .home-img img {
@@ -241,6 +238,7 @@ span {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: rgb(226, 212, 241);
     gap: 3rem;
 }
 
@@ -284,8 +282,6 @@ span {
     transform: translateY(-10px) scale(1.03) rotateX(2deg) rotateY(2deg);
 }
 .education-item:hover i{
-
-    
     color: rgb(243, 191, 19);;
 }
 .education-item i {
@@ -383,10 +379,11 @@ span {
 }
 /* Projects */
 .projects {
-    background: var(--snd-bg-color);
+    
     display: flex; 
     flex-direction: column; 
     align-items: center;
+    background: rgb(226, 212, 241);
     gap: 3rem;
 }
 .projects h2 {
