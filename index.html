@@ -37,10 +37,10 @@
   <div class="hero-meta">
     <span class="availability"><span class="dot"></span> Open to internships &amp; collaborations</span>
     <a class="hero-cta" href="#contact">Get in touch →</a>
-    <a class="cv-btn" href="https://cv-amber-zeta-52.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio website">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
-      <span>View Portfolio</span>
-    </a>
+    <button class="cv-btn" id="cvBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span class="cv-label">Download CV</span>
+        </button>
   </div>
   <div class="hero-stats">
     <div class="stat"><span class="stat-n">1200+</span><span class="stat-l">Problems solved</span></div>
@@ -72,7 +72,7 @@
 <section id="skills" class="skills-section reveal">
   <p class="sec-label">03 — Skills</p><h2 class="sec-title">Technical <span class="accent">Expertise</span></h2>
   <div class="skills-grid">
-    <div class="skill-group"><div class="skill-group-name">Languages</div><div class="skill-pills"><span class="skill-pill">C</span><span class="skill-pill">C++</span><span class="skill-pill featured">Java</span><span class="skill-pill">Python</span><span class="skill-pill">TypeScript</span></div></div>
+    <div class="skill-group"><div class="skill-group-name">Languages</div><div class="skill-pills"><span class="skill-pill">C</span><span class="skill-pill">C++</span><span class="skill-pill featured">Java</span><span class="skill-pill">Python</span></div></div>
     <div class="skill-group"><div class="skill-group-name">Frontend</div><div class="skill-pills"><span class="skill-pill featured">React</span><span class="skill-pill featured">Next.js</span><span class="skill-pill">Tailwind CSS</span><span class="skill-pill">HTML</span><span class="skill-pill">CSS</span><span class="skill-pill">JavaScript</span></div></div>
     <div class="skill-group"><div class="skill-group-name">Backend</div><div class="skill-pills"><span class="skill-pill featured">Spring Boot</span><span class="skill-pill">Express.js</span><span class="skill-pill">MySQL</span><span class="skill-pill">MongoDB</span></div></div>
     <div class="skill-group"><div class="skill-group-name">DevOps &amp; Testing</div><div class="skill-pills"><span class="skill-pill">Git</span><span class="skill-pill">GitHub</span><span class="skill-pill">Docker</span><span class="skill-pill">Unit Testing</span></div></div>
@@ -82,14 +82,14 @@
 <section id="education" class="reveal">
   <p class="sec-label">04 — Education</p><h2 class="sec-title">Academic <span class="accent">Background</span></h2>
   <div class="edu-layout">
-    <div class="edu-entry"><div><span class="edu-year">2021 – present</span><div class="edu-degree">B.Sc. Software Engineering</div><div class="edu-school">Shahjalal University of Science &amp; Technology, Sylhet</div><div class="edu-courses"><span class="edu-course">Data Structures &amp; Algorithms</span><span class="edu-course">Design Patterns</span><span class="edu-course">Operating Systems</span><span class="edu-course">Software Requirement Specification</span><span class="edu-course">Information Security</span><span class="edu-course">Machine Learning</span><span class="edu-course">Deep Learning</span><span class="edu-course">Human Computer Interaction</span><span class="edu-course">Software Project Management</span></div></div><div class="edu-meta">SUST<br>Sylhet, BD</div></div>
+    <div class="edu-entry"><div><span class="edu-year">2023 – present</span><div class="edu-degree">B.Sc. Software Engineering</div><div class="edu-school">Shahjalal University of Science &amp; Technology, Sylhet</div><div class="edu-courses"><span class="edu-course">Data Structures &amp; Algorithms</span><span class="edu-course">Design Patterns</span><span class="edu-course">Operating Systems</span><span class="edu-course">Software Requirement Specification</span><span class="edu-course">Information Security</span><span class="edu-course">Machine Learning</span><span class="edu-course">Deep Learning</span><span class="edu-course">Human Computer Interaction</span><span class="edu-course">Software Project Management</span></div></div><div class="edu-meta">SUST<br>Sylhet, BD</div></div>
     <div class="edu-entry"><div><span class="edu-year">2019 – 2021</span><div class="edu-degree">Higher Secondary Certificate</div><div class="edu-school">Agricultural University College, Mymensingh</div><p style="font-size:.86rem;color:var(--text2);max-width:52ch;line-height:1.7">Science stream, with a focus on Mathematics and Physics — the foundation that led to Software Engineering.</p></div><div class="edu-meta">Mymensingh<br>Bangladesh</div></div>
   </div>
 </section>
 <section id="contact" class="contact-section reveal">
   <p class="sec-label">05 — Contact</p><h2 class="contact-headline">Let's build<br><em>something</em></h2><p class="contact-sub">Open to internships, collaborations, and interesting problems worth solving.</p>
   <div class="contact-grid">
-    <div class="contact-row"><div><span class="contact-type">Portfolio</span><div class="contact-value">cv-amber-zeta-52.vercel.app</div></div><a class="btn-ghost" href="https://cv-amber-zeta-52.vercel.app/" target="_blank" rel="noopener noreferrer">Open ↗</a></div>
+    <div class="contact-row"><div><span class="contact-type">CV</span><div class="contact-value">cv-amber-zeta-52.vercel.app</div></div><a class="btn-ghost" href="https://cv-amber-zeta-52.vercel.app/" target="_blank" rel="noopener noreferrer">Open ↗</a></div>
     <div class="contact-row"><div><span class="contact-type">Email</span><div class="contact-value" id="emailVal">pnsshikha@gmail.com</div></div><button class="btn-ghost" id="copyBtn" type="button">Copy</button></div>
     <div class="contact-row"><div><span class="contact-type">Location</span><div class="contact-value">Sylhet, Bangladesh</div></div><span class="availability" style="font-size:.74rem;padding:6px 14px;box-shadow:none"><span class="dot"></span> Available</span></div>
     <div class="contact-row"><div><span class="contact-type">GitHub</span><div class="contact-value">shikha1352</div></div><a class="btn-ghost" href="https://github.com/shikha1352" target="_blank" rel="noopener noreferrer">Open ↗</a></div>
